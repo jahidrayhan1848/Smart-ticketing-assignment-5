@@ -151,16 +151,17 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <button class="btn btn-accent btn-outline text-xl font-bold">
+          <!-- <button class="btn btn-accent btn-outline text-xl font-bold">
             See All Offers
-          </button>
+          </button> -->
+          <button class="btn  bg-white text-[#1DD100] block ">See All Offers</button>
         </div>
       </section>
       <!-- offer and cupon section end  -->
     </header>
-    <main>
+    <main id="tickets">
       <!-- ticket section  -->
-      <section class="w-[1171px] mx-auto">
+      <section  class="w-[1171px] mx-auto">
         <div class="text-center space-y-4">
           <h1 class="text-5xl font-bold text-[#030712]">P.H Paribahan</h1>
           <p class="text-xl text-[#03071299]">
@@ -252,7 +253,7 @@
                 <div>
                     
                 </div>
-               <div id="tickets" class="container space-y-5">
+               <div  class="container space-y-5">
                 <div class="flex justify-between">
                     <!-- a a1,a2  -->
                     <div class="flex items-center gap-5">
@@ -420,6 +421,43 @@
          </div>
          <div class="col-span-3 p-10">
             <h1 class="font-semibold text-2xl font-raleway">Select Your Seat</h1>
+            <div>
+                <table class="table my-5">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th class="text-[#030712] font-medium text-lg">Seat <span class="px-2 text-white rounded-3xl bg-[#1DD100]">2</span></th>
+                            <th class="text-[#030712] font-medium text-lg">Class</th>
+                            <th class="text-[#030712] font-medium text-lg">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+            <hr>
+                        <!-- total price -->
+                        <div class="flex justify-between my-4">
+                            <h1 class="text-lg font-medium">Total Price</h1>
+                            <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+                        </div>
+                        <!-- btn and input field -->
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Have any copupon?" />
+                            <button class="bg-[#1DD100] p-2 rounded-xl text-white font-semibold">Secondary</button>
+                        </label>
+
+                        <div class="flex justify-between my-4">
+                            <h1 class="text-lg font-medium">Grand Total</h1>
+                            <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+                        </div>
+            <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Search" />
+                <button class="bg-[#1DD100] text-white px-5 py-2 rounded-lg">Apply</button>
+              </label>
+              
            
                 <div>
                    
@@ -431,7 +469,12 @@
                     <input type="number" placeholder="Type here" class="input input-bordered input-primary w-full " />
                     <h1 class="text-[#030712] text-xl font-semibold">Email ID*</h1>
                     <input type="email" placeholder="Type here" class="input input-bordered input-primary w-full" />
-                    <button class="btn btn-success block w-full">Success</button>
+                    <button class="btn text-white bg-[#1DD100] block w-full">Next</button>
+                    <div class="flex justify-center gap-5">
+                        <p class="text-[#03071299] text-xs font-medium">Terms and Conditions</p>
+                        
+                        <p class="text-[#03071299] text-xs font-medium">Cancellation Policy</p>
+                    </div>
                 </div>
 
           
