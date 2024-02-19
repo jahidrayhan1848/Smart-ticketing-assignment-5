@@ -42,7 +42,7 @@ for (const seat of seatsButton){
             GrandTotal.innerText=totalPrice;   
          }
          else{
-            alert('No Allow')
+            alert('you are already4 seats selected')
          }   
 
     })
