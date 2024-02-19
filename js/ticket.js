@@ -55,7 +55,7 @@ for (const seat of seatsButton){
     const grandTotalText=document.getElementById('grand-total');
     const grandTotal=grandTotalText.innerText;
     if(couponId==='NEW15'){
-        const discount= 15 * grandTotal / 100;
+        const discount=  15 * grandTotal / 100;
         const totalDiscount= grandTotal -discount;
       grandTotalText.innerText=totalDiscount;
     //   discount amount show 
@@ -66,9 +66,22 @@ for (const seat of seatsButton){
     //    discount done ///
     const discountApply=document.getElementById('discount-done');
     discountApply.classList.add('hidden')
+    }
+    else if (couponId==='Couple 20') {
+        const discount=  20 * grandTotal / 100;
+        const totalDiscount= grandTotal -discount;
+        grandTotalText.innerText=totalDiscount;
+        const discountAmountId=document.getElementById('discount-amount')
+    const discountAmount=parseInt(discountAmountId.innerText);
+    const totalAmount= discount + discountAmount;
+    discountAmountId.innerText= totalAmount
+    //    discount done ///
+    const discountApply=document.getElementById('discount-done');
+    discountApply.classList.add('hidden')
 
 
     }
+   
 
 
 
