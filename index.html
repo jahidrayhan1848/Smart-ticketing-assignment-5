@@ -432,28 +432,26 @@
             <!-- total price -->
             <div class="flex justify-between my-4">
               <h1 class="text-lg font-medium">Total Price</h1>
-              <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+              <h1 class="text-lg font-medium">BDT <span id="total-price">00</span></h1>
+            </div>
+            <!-- discount amount  -->
+            <div class="flex justify-between my-4">
+              <h1 class="text-lg font-medium">Discount Amount</h1>
+              <h1 class="text-lg font-medium">BDT <span  id="discount-amount">00</span></h1>
             </div>
             <!-- btn and input field -->
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Have any copupon?" />
-              <button
-                class="bg-[#1DD100] p-2 rounded-xl text-white font-semibold"
-              >
-                Secondary
+            <label id="discount-done" class="input input-bordered flex items-center gap-2">
+              <input id="coupon" type="text" class="grow" placeholder="Have any coupon?" />
+              <button id="apply" class="bg-[#1DD100] text-white px-5 py-2 rounded-lg">
+                Apply
               </button>
             </label>
 
             <div class="flex justify-between my-4">
               <h1 class="text-lg font-medium">Grand Total</h1>
-              <h1 class="text-lg font-medium">BDT <span>00</span></h1>
+              <h1 class="text-lg font-medium">BDT <span id="grand-total">00</span></h1>
             </div>
-            <label class="input input-bordered flex items-center gap-2">
-              <input type="text" class="grow" placeholder="Search" />
-              <button class="bg-[#1DD100] text-white px-5 py-2 rounded-lg">
-                Apply
-              </button>
-            </label>
+            
 
             <div></div>
             <div class="space-y-2">
@@ -466,14 +464,14 @@
                 class="input input-bordered input-primary w-full"
               />
               <h1 class="text-[#030712] text-xl font-semibold">
-                Phone Number**
+                Phone Number*
               </h1>
               <input
                 type="number"
                 placeholder="Type here"
                 class="input input-bordered input-primary w-full"
               />
-              <h1 class="text-[#030712] text-xl font-semibold">Email ID*</h1>
+              <h1 class="text-[#030712] text-xl font-semibold">Email ID</h1>
               <input
                 type="email"
                 placeholder="Type here"
