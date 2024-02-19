@@ -81,6 +81,9 @@ for (const seat of seatsButton){
 
 
     }
+    else {
+        alert('Please Enter Valid coupon Code')
+    }
    
 
 
